@@ -157,7 +157,7 @@ function processContains(item, list, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
+function processDuplicateFree(list, callback) {
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
 }
 
@@ -200,7 +200,7 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
 function firstNamesAllCaps(runners) {
-  const caps = runners.map(firstNameCaps => firstNameCaps.toUpperCase());
+  const caps = runners.map(runner => runner.first_name.toUpperCase());
   return caps; 
 }
 
@@ -255,8 +255,8 @@ function tallyUpDonations(/* CODE HERE */) {
 function counterMaker() {
   // BROKEN CODE STARTS
   const count = 0;
-  return function counter() {
-    count++
+  function counter() {
+    return count++
   }
   // BROKEN CODE ENDS
 }
