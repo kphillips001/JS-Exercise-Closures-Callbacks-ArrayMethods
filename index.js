@@ -284,16 +284,15 @@ function counterMaker() {
  * etc
 */
 function counterMakerWithLimit(limit) {
-  let count =-1;
-
-  return function () {
-    if(limit === count) {
-      count = 0
-    } else {
-      count ++
+  let count = -1;
+  return function counter() {
+    if (count === limit) {
+      count = -1
     }
-    return count;
+    return ++count; 
   }
+
+
 }
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
