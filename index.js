@@ -157,7 +157,7 @@ function processContains(item, list, callback) {
  * should return 3.
 */
 function processDuplicateFree(list, callback) {
-  
+  return callback(Array.from(new Set(list)))
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
