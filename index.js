@@ -110,8 +110,7 @@ function processSum(numberList, callback) {
  * should return 1000.
 */
 function processProduct(num1, num2, callback) {
-  const product = num1 * num2;
-  return callback(product);
+  return callback (num1 * num2); 
 }
 
 /**
@@ -158,7 +157,7 @@ function processContains(item, list, callback) {
  * should return 3.
 */
 function processDuplicateFree(list, callback) {
-  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+  
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
